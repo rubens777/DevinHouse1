@@ -1,0 +1,22 @@
+h1 {
+    font-family: Verdana;
+    font-size: 20px;
+    color: brown;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(252, 252, 95);
+}
+
+
+p {
+    font-size: 14px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 2px black;
+    margin-top: 20px;
+}
