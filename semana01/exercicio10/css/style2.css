@@ -9,45 +9,52 @@
     width: 100%;
 }
 
+.nav-links {
+    list-style-type: none;
 
-.nav-item{
+}
+
+.nav-item {
     display: inline-block;
     padding: 8px;
+    background-color: rgb(255, 0, 140);
     margin-left: 10px;
-    
-    
+    transition: 300ms;
+
 
 }
 
+.nav-item:hover {
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(32, 28, 30);
+    margin-left: 10px;
+    transition: 300ms;
 
-.nav-item a{
+}
+
+.nav-item a {
     text-decoration: none;
     font-family: Verdana;
-    color: rgb(40, 22, 202);
-    font-size: 20px;
-    
+    color: white;
+
 }
-
-
 
 
 .logo {
     flex: 20%;
 }
 
-.menu {
-    padding: 20px;
+#dev {
+    border: solid 10px;
 }
 
 .menu a {
     text-decoration: none;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 20px 16px;
     font-family: Verdana;
-    color: rgb(68, 19, 146);
-   
 }
-
 
 .titulo {
     margin-top: 100px;
@@ -66,12 +73,17 @@ h1 {
 
 body {
     margin: 0;
-    background-color: rgb(174, 175, 179);
+    background-color: rgb(71, 4, 50);
+    margin-bottom: 5%;
 }
 
+h2 {
+    color: white;
+}
 
 p {
     font-size: 14px;
+    color: rgb(219, 212, 212);
 }
 
 button {
@@ -87,4 +99,16 @@ button {
 
 .coluna {
     flex: 33.33%;
+}
+
+footer {
+
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-bottom: -5%;
+    background-color: rgb(255, 0, 21);
+    color: white;
+    padding: 1%;
+	
+
 }
