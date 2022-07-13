@@ -10,8 +10,7 @@
 }
 
 .nav-links{
-    list-style-type: none;
-    
+    list-style-type: none;    
 }
 
 .nav-item{
@@ -20,27 +19,21 @@
     background-color: rgb(255, 0, 140);
     margin-left: 10px;
     transition: 300ms;
-    
-
 }
+
 .nav-item:hover{
     display: inline-block;
     padding: 15px;
     background-color: rgb(32, 28, 30);
     margin-left: 10px;
-    transition: 300ms;
-    
+    transition: 300ms;    
 }
 
 .nav-item a{
     text-decoration: none;
     font-family: Verdana;
-    color: white;
-    
-    
+    color: white;   
 }
-
-
 
 .logo{
     flex: 20%;
@@ -60,7 +53,6 @@
 .titulo{
     margin-top: 100px;
 }
-
 
 h1 {
     font-family: Verdana; 

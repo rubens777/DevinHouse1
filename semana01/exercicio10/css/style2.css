@@ -11,7 +11,6 @@
 
 .nav-links {
     list-style-type: none;
-
 }
 
 .nav-item {
@@ -20,8 +19,6 @@
     background-color: rgb(255, 0, 140);
     margin-left: 10px;
     transition: 300ms;
-
-
 }
 
 .nav-item:hover {
@@ -30,14 +27,12 @@
     background-color: rgb(32, 28, 30);
     margin-left: 10px;
     transition: 300ms;
-
 }
 
 .nav-item a {
     text-decoration: none;
     font-family: Verdana;
     color: white;
-
 }
 
 
@@ -102,13 +97,10 @@ button {
 }
 
 footer {
-
     margin-top: 5%;
     margin-left: 0%;
     margin-bottom: -5%;
     background-color: rgb(255, 0, 21);
     color: white;
     padding: 1%;
-	
-
 }

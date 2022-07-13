@@ -14,9 +14,6 @@
     display: inline-block;
     padding: 8px;
     margin-left: 10px;
-    
-    
-
 }
 
 
@@ -24,12 +21,8 @@
     text-decoration: none;
     font-family: Verdana;
     color: rgb(40, 22, 202);
-    font-size: 20px;
-    
+    font-size: 20px; 
 }
-
-
-
 
 .logo {
     flex: 20%;
@@ -44,8 +37,7 @@
     font-size: 20px;
     padding: 10px 15px;
     font-family: Verdana;
-    color: rgb(68, 19, 146);
-   
+    color: rgb(68, 19, 146);   
 }
 
 
