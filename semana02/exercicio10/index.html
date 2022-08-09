@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10 M01S02</title>
+</head>
+
+<body>
+    <h1>Exercicio 10</h1>
+    <hr>
+    <script>
+
+        let i = 1, nomeAluno = '', media = 0, notas = [], soma = 0;
+
+        nomeAluno = prompt('Digite o nome do aluno:');
+
+        while (i < 5) {
+
+            nota = (Number(prompt(`Digite a  ${i} ª nota do aluno de 0 a 10:`)));
+            i++;
+
+            nota < 0 || nota > 10 || isNaN(nota) ? (alert('Nota inválida, digite novamente!'), i--) : notas.push(nota);
+
+        }
+
+        for (let i in notas) {
+            soma += notas[i]
+        }
+
+        media = soma / 4;
+
+        if (media >= 7) {
+            document.write(` <h3> A média do aluno ${nomeAluno} é  ${media.toFixed(1)} , parabéns está aprovado!`)
+        } else {
+            document.write(` <h3> A média do aluno ${nomeAluno} é  ${media.toFixed(1)} , infelizmente está reprovado!`)
+        }
+
+    </script>
+</body>
+
+</html>

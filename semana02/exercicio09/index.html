@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09 M01S02</title>
+</head>
+
+<body>
+    <h1>Exercicio 09</h1>
+    <hr>
+    <script>
+        
+        let codProduto, qtdItens, produto = '', maiorValor = 0, arrayValores = [0, 0, 0, 0, 0];
+        while (codProduto != '6') {
+            codProduto = prompt('Selecione o tipo de produto: \n' +
+                '(1) Hortifruti \n' +
+                '(2) Laticícios \n' +
+                '(3) Carnes \n' +
+                '(4) Peixes \n' +
+                '(5) Aves \n' +
+                '(6) Fechar pedido'
+            );
+
+            if (codProduto != '6') {
+                qtdItens = prompt('Informe a quantidade: ');
+            }
+
+            switch (codProduto) {
+                case '1':
+                    arrayValores[0] += qtdItens;
+                    if (arrayValores[0] > maiorValor) {
+                        maiorValor = arrayValores[0];
+                        produto = 'Hortifruti';
+                    }
+
+                    break;
+                case '2':
+                    arrayValores[1] += qtdItens;
+                    if (arrayValores[1] > maiorValor) {
+                        maiorValor = arrayValores[1];
+                        produto = 'Laticinios';
+                    }
+
+                    break;
+                case '3':
+                    arrayValores[2] += qtdItens;
+                    if (arrayValores[2] > maiorValor) {
+                        maiorValor = arrayValores[2];
+                        produto = 'Carnes';
+                    }
+
+                    break;
+                case '4':
+                    arrayValores[3] += qtdItens;
+                    if (arrayValores[3] > maiorValor) {
+                        maiorValor = arrayValores[3];
+                        produto = 'Peixes';
+                    }
+
+                    break;
+                case '5':
+                    arrayValores[4] += qtdItens;
+                    if (arrayValores[4] > maiorValor) {
+                        maiorValor = arrayValores[4];
+                        produto = 'Aves';
+                    }
+
+                    break;
+            }
+
+        }
+
+        document.write('<h2> O tipo de produto com a maior quantidade selecionada é: ' + produto + '</h2>');
+
+
+    </script>
+</body>
+
+</html>

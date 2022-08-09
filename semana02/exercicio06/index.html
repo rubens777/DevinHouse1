@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06 M01S02</title>
+</head>
+
+<body>
+    <h1>Exercicio 06</h1>
+    <hr>
+
+    <script>
+
+        let p = prompt('Digite seu peso:');
+        let a = prompt('Digite sua altura:');
+
+        let peso = parseFloat(p.replace(',', '.'));
+        let altura = parseFloat(a.replace(',', '.'));
+
+        let imc = peso / (altura * altura);
+
+        document.write('<h2> IMC = ' + imc.toFixed(2) + '</h2>')
+
+        if (imc >= 25) {
+            alert('Você está acima do peso, procure um médico');
+        } else if (imc >= 18.5 && imc <= 24.9) {
+            alert('PARABÉNS!! Você está no peso ideal');
+        } else {
+            alert('Você está abaixo do peso, procure um médico');
+        }
+
+    </script>
+
+</body>
+
+</html>

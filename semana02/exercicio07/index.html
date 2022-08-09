@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07 M01S02</title>
+</head>
+
+<body>
+    <h1>Exercicio 07</h1>
+    <hr>
+    <script>
+        let i = 0, qtd = 0, avaliacao;
+
+        while (i < 4) {
+            avaliacao = window.prompt('Digite aqui sua avaliação sobre Stranger Things: ( ruim, bom ou excelente): ');
+            switch (avaliacao) {
+                case 'ruim':
+                    qtd++;
+                    break;
+                case 'bom':
+                    break;
+                case 'excelente':
+                    break;
+                default:
+                    window.alert('Digite novamente por favor, serão aceitas apenas as avaliações: ( ruim, bom ou excelente)!');
+                    i--
+                    break;
+            }
+            i++
+        }
+        if (qtd == 0) {
+            document.write('Nenhuma pessoa achou Stranger Things ruim!');
+
+        } else if (qtd == 1) {
+            document.write('Apenas 1 pessoa achou Stranger Things ruim!');
+        }
+
+        else {
+            document.write('<h4>' + qtd + ' pessoas acharam Stranger Things ruim!</h4>');
+        }
+
+    </script>
+
+</body>
+
+</html>
